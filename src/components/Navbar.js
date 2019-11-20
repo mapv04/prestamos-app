@@ -1,62 +1,79 @@
-import React from 'react';
+import React from "react";
+import "../styles/navbar.css";
+
 class Navbar extends React.Component {
-	/*	displayBurgerOpts(e) {
-		var nav = document.getElementsByTagName('nav')[0];
-		var ulNav = document.getElementsByTagName('ul')[0];
-		var brand = document.getElementById('brand');
-		var burger = document.getElementById('burger');
-		nav.style.flexDirection = 'column';
-		ulNav.style.display = 'flex';
-		ulNav.style.flexDirection = 'column';
-		brand.style.display = 'none';
-		burger.style.display = 'none';
-	}*/
+  render() {
+    return (
+      <div className="w-full fixed h-20  bg-white shadow-xl flex  items-center">
+        <div className="container mx-auto flex flex-wrap  lg:px-16 px-6 lg:py-0 py-2 bg-white">
+          <div className="flex-1 flex justify-between items-center">
+            <a href="/">
+              <span className="font-bold text-4xl text-pink-600">ATENAS</span>
+            </a>
+          </div>
+          <label
+            htmlFor="menu-toggle"
+            className="cursor-pointer lg:hidden block"
+          >
+            <div className="w-4 h-1 bg-black" />
+            <div className="w-4 h-1 my-1 bg-black" />
+            <div className="w-4 h-1 bg-black" />
+          </label>
+          <input type="checkbox" className="hidden" id="menu-toggle" />
 
-	render() {
-		return (
-			<div className="navbar">
-				<nav className="flex justify-between items-center container mx-auto my-2 px-4">
-					<div id="brand" className="w-32">
-						<span className="font-bold text-4xl text-pink-600">ATENAS</span>
-					</div>
-					<ul className="hidden md:flex justify-end">
-						<li className="ml-4 mr-4 text-xl">
-							<a className="text-black no-underline" href="#">
-								Simulador
-							</a>
-						</li>
-						<li className="ml-4 mr-4 text-xl">
-							<a className="text-black no-underline" href="#">
-								Producto
-							</a>
-						</li>
-						<li className="ml-4 mr-4 text-xl">
-							<a className="text-black no-underline" href="#">
-								Quienes Somos
-							</a>
-						</li>
-						<li className="ml-4 mr-4 text-xl">
-							<a className="text-black no-underline" href="#">
-								Ayuda
-							</a>
-						</li>
-						<li className="ml-4 mr-4 text-xl text-pink-400">
-							<a className="no-underline" href="#">
-								Inicia sesion
-							</a>
-						</li>
-					</ul>
-
-					{/*BURGER*/}
-					<div id="burger" className="md:hidden" onClick={this.displayBurgerOpts}>
-						<div className="w-4 h-1 bg-black" />
-						<div className="w-4 h-1 my-1 bg-black" />
-						<div className="w-4 h-1 bg-black" />
-					</div>
-				</nav>
-			</div>
-		);
-	}
+          <div
+            className="hidden lg:flex lg:items-center lg:w-auto w-full"
+            id="menu"
+          >
+            <nav>
+              <ul className="lg:flex items-center justify-between text-base pt-4 lg:pt-0">
+                <li className="text-xl">
+                  <a
+                    href=""
+                    className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
+                  >
+                    Simulador
+                  </a>
+                </li>
+                <li className="text-xl">
+                  <a
+                    href=""
+                    className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
+                  >
+                    Producto
+                  </a>
+                </li>
+                <li className="text-xl">
+                  <a
+                    href=""
+                    className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
+                  >
+                    Quienes Somos
+                  </a>
+                </li>
+                <li className="text-xl">
+                  <a
+                    href=""
+                    className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
+                  >
+                    Ayuda
+                  </a>
+                </li>
+                <li className="text-xl text-pink-400">
+                  <a
+                    href=""
+                    className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
+                  >
+                    Inicia sesion
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Navbar;

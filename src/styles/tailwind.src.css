@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 .navbar {
-	@apply w-full h-20 fixed bg-white shadow-xl;
+  @apply w-full h-20 fixed bg-white shadow-xl;
 }
