@@ -1,17 +1,16 @@
 import React from 'react';
-
-import Login from '../components/Login';
 import Navbar from '../components/Navbar';
+import Signup from '../components/Signup';
 
-class Auth extends React.Component {
+class AuthSignup extends React.Component {
   render() {
     return (
       <div className="bg-gray-100 h-screen">
         <Navbar />
-        <Login />
+        <Signup />
       </div>
     );
   }
 }
 
-export default Auth;
+export default AuthSignup;

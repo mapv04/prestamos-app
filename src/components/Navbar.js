@@ -9,9 +9,9 @@ class Navbar extends React.Component {
       <div className="w-full fixed h-20  bg-white shadow-xl flex flex-wrap items-center">
         <div className="container mx-auto flex flex-wrap  lg:px-16 px-6 lg:py-0 py-2 bg-white">
           <div className="flex-1 flex justify-between items-center">
-            <a href="/">
+            <Link to="/">
               <span className="font-bold text-4xl text-pink-600">ATENAS</span>
-            </a>
+            </Link>
           </div>
           <label
             htmlFor="menu-toggle"
