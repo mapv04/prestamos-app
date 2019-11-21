@@ -1,5 +1,7 @@
-import React from "react";
-import "../styles/navbar.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import '../styles/navbar.css';
 
 class Navbar extends React.Component {
   render() {
@@ -28,44 +30,44 @@ class Navbar extends React.Component {
             <nav>
               <ul className="lg:flex items-center justify-between text-base pt-4 lg:pt-0">
                 <li className="text-xl">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
                   >
                     Simulador
-                  </a>
+                  </Link>
                 </li>
                 <li className="text-xl">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
                   >
                     Producto
-                  </a>
+                  </Link>
                 </li>
                 <li className="text-xl">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
                   >
                     Quienes Somos
-                  </a>
+                  </Link>
                 </li>
                 <li className="text-xl">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
                   >
                     Ayuda
-                  </a>
+                  </Link>
                 </li>
                 <li className="text-xl text-pink-400">
-                  <a
-                    href=""
+                  <Link
+                    to="/login"
                     className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
                   >
                     Inicia sesion
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
