@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../styles/navbar.css';
+//FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 class Navbar extends React.Component {
   render() {
@@ -17,9 +20,7 @@ class Navbar extends React.Component {
             htmlFor="menu-toggle"
             className="cursor-pointer lg:hidden block"
           >
-            <div className="w-4 h-1 bg-black" />
-            <div className="w-4 h-1 my-1 bg-black" />
-            <div className="w-4 h-1 bg-black" />
+            <FontAwesomeIcon size="2x" icon={faBars} color="#ed64a6" />
           </label>
           <input type="checkbox" className="hidden" id="menu-toggle" />
 
@@ -31,7 +32,7 @@ class Navbar extends React.Component {
               <ul className="lg:flex items-center justify-between text-base pt-4 lg:pt-0">
                 <li className="text-xl">
                   <Link
-                    to=""
+                    to="/simulator"
                     className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
                   >
                     Simulador

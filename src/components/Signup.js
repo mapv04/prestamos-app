@@ -53,6 +53,7 @@ class Signup extends React.Component {
                 id="email"
                 className="shadow rounded border border-pink-500 w-full py-2 px-3 text-gray-700 leading-tight"
                 placeholder="Correo"
+                type="email"
               />
             </div>
 
@@ -65,7 +66,7 @@ class Signup extends React.Component {
               </label>
               <input
                 id="password"
-                className="shadow rounded border border-pink-500 w-full py-2 px-3 text-gray-700"
+                className="shadow rounded border border-pink-500 w-full py-2 px-3 text-gray-700 leading-tight"
                 placeholder="Contraseña"
               />
             </div>
