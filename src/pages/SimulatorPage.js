@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Simulator from '../components/Simulator';
 import SimulatorData from '../components/SimulatorData';
+import Footer from '../components/Footer';
 
 import { calculateTasa } from '../tasas';
 
@@ -94,6 +95,7 @@ class SimulatorPage extends React.Component {
           </p>
           <div className="m-4 flex justify-center">{this.whichComponent()}</div>
         </div>
+        <Footer />
       </div>
     );
   }

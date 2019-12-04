@@ -13,7 +13,7 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="pt-24 container mx-auto">
+      <div className="pt-24 container mx-auto h-full">
         <h1 className="text-center font-bold text-5xl text-pink-600 block">
           ATENAS
         </h1>
