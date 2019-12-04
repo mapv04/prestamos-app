@@ -47,6 +47,19 @@ class Simulator extends React.Component {
           />
         </div>
         <div className="m-4">
+          <label>Que tan buen historial crediticio crees tener?</label>
+          <select
+            className="bg-white shadow rounded border block border-pink-500 w-auto py-2 px-3 text-gray-700 leading-tight"
+            name="creditHistory"
+            onChange={this.props.onChange}
+            required
+          >
+            <option value="AA">Bueno</option>
+            <option value="BB">Regular</option>
+            <option value="CC">Malo</option>
+          </select>
+        </div>
+        <div className="m-4">
           <label className="block">Cuánto necesitas?</label>
           <input
             type="text"
@@ -65,17 +78,10 @@ class Simulator extends React.Component {
             onChange={this.props.onChange}
             required
           >
+            <option value="6">6 meses</option>
             <option value="12">12 meses</option>
-            <option value="16">16 meses</option>
-            <option value="20">20 meses</option>
+            <option value="18">18 meses</option>
             <option value="24">24 meses</option>
-            <option value="28">28 meses</option>
-            <option value="32">32 meses</option>
-            <option value="36">36 meses</option>
-            <option value="40">40 meses</option>
-            <option value="42">42 meses</option>
-            <option value="44">44 meses</option>
-            <option value="48">48 meses</option>
           </select>
         </div>
         <div className="m-4">

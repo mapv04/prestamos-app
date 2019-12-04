@@ -14,24 +14,28 @@ class SimulatorData extends React.Component {
           </div>
           <div className="flex">
             <h3 className="m-2">Meses</h3>{' '}
-            <h4 className="m-2 text-pink-400">
-              {this.props.data.months || '12'}
-            </h4>
+            <h4 className="m-2 text-pink-400">{this.props.data.months || 6}</h4>
           </div>
         </div>
 
         <div className="w-full flex flex-wrap justify-around text-center">
-          <div className="m-4">
+          <div className="m-4 hidden">
             <p>Abono a capital mensual</p>{' '}
             <p className="text-pink-400">{this.props.simulator.capital}</p>
           </div>
-          <div className="m-4">
+          <div className="m-4 hidden">
             <p>Pago de intereses mensual</p>{' '}
             <p className="text-pink-400">{this.props.simulator.tax}</p>
           </div>
           <div className="m-4">
             <p>Pago total mensual</p>
             <p className="text-pink-400">{this.props.simulator.total}</p>
+          </div>
+          <div className="m-4">
+            <p>Tasa Anual</p>
+            <p className="text-pink-400">
+              {this.props.simulator.tasaAnual} {'%'}
+            </p>
           </div>
         </div>
       </div>

@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import Simulator from '../components/Simulator';
 import SimulatorData from '../components/SimulatorData';
 
+import { calculateTasa } from '../tasas';
+
 class SimulatorPage extends React.Component {
   state = {
     data: false,
@@ -13,12 +15,14 @@ class SimulatorPage extends React.Component {
       email: '',
       quantity: '',
       months: '',
-      phone: ''
+      phone: '',
+      creditHistory: ''
     },
     simulator: {
       capital: '',
       tax: '',
-      total: ''
+      total: '',
+      tasaAnual: ''
     }
   };
 
@@ -39,18 +43,24 @@ class SimulatorPage extends React.Component {
   };
 
   simulate() {
-    const months = this.state.form.months || 12;
-    const pow = Math.pow(1.01, months);
-    const saldo = parseFloat(this.state.form.quantity).toFixed(2);
-    const total = ((saldo * 0.01 * pow) / (pow - 1)).toFixed(2);
-    const capital = (total - saldo * 0.01).toFixed(2);
-    const tax = (total - capital).toFixed(2);
+    const months = this.state.form.months || 6;
+    const tasas = calculateTasa(
+      parseInt(months),
+      this.state.form.creditHistory || 'AA'
+    );
+
+    const pow = Math.pow(1 + tasas[0], months);
+    const saldo = parseFloat(this.state.form.quantity);
+    const total = parseFloat(((saldo * tasas[0] * pow) / (pow - 1)).toFixed(2));
+    const capital = parseFloat((total - saldo * tasas[0]).toFixed(2));
+    const tax = parseFloat((total - capital).toFixed(2));
 
     this.setState({
       simulator: {
         capital: capital,
         tax: tax,
-        total: total
+        total: total,
+        tasaAnual: tasas[1] * 100
       }
     });
   }
