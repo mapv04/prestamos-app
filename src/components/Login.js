@@ -15,7 +15,7 @@ class Login extends React.Component {
     return (
       <div className="pt-24 container mx-auto h-full">
         <h1 className="text-center font-bold text-5xl text-pink-600 block">
-          ATENAS
+          Inicia sesión
         </h1>
         <div className="flex justify-center">
           <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">

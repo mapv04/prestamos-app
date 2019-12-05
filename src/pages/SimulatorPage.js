@@ -83,11 +83,11 @@ class SimulatorPage extends React.Component {
 
   render() {
     return (
-      <div className="bg-gray-100 h-screen">
+      <div className="bg-gray-100 h-screen font-baskervville">
         <Navbar />
-        <div className="pt-24 container mx-auto">
+        <div className="pt-24 container mx-auto mb-24">
           <h1 className="text-center font-bold text-5xl text-pink-600 block">
-            Simulador ATENAS
+            Simulador
           </h1>
           <p className="text-center">
             Simula tu crédito en 3 pasos y calcula el monto, plazo y pagos de tu

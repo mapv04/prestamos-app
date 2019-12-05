@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 class AuthSignup extends React.Component {
   render() {
     return (
-      <div className="bg-gray-100 h-screen">
+      <div className="bg-gray-100 h-screen font-baskervville">
         <Navbar />
         <Signup />
         <Footer />

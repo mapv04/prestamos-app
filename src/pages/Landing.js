@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 class Landing extends React.Component {
   render() {
     return (
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 font-baskervville">
         <Navbar />
         <Introduction />
         <HowTo />

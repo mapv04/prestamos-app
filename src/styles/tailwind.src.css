@@ -4,6 +4,15 @@
 
 @tailwind utilities;
 
+@font-face {
+  font-family: Baskervville;
+  src: url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
+}
+
 .navbar {
   @apply w-full h-20 fixed bg-white shadow-xl;
+}
+
+.font-baskervville {
+  font-family: 'Baskervville';
 }
