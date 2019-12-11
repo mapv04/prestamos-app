@@ -56,7 +56,7 @@ class Navbar extends React.Component {
                 </li>
                 <li className="text-xl">
                   <Link
-                    to=""
+                    to="/help"
                     className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-pink-400"
                   >
                     Ayuda

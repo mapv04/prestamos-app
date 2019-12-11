@@ -1,6 +1,15 @@
 import React from 'react';
 
 class SimulatorData extends React.Component {
+  componentDidMount() {
+    this.navElementActive();
+  }
+
+  navElementActive() {
+    var navElement = document.getElementsByTagName('a')[1];
+    navElement.classList.add('border-pink-400');
+  }
+
   render() {
     return (
       <div className="md:w-3/4 mb-20">

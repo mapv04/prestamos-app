@@ -16,3 +16,7 @@
 .font-baskervville {
   font-family: 'Baskervville';
 }
+
+.auth-input {
+  @apply shadow rounded border border-pink-500 w-full py-2 px-3 text-gray-700 leading-tight;
+}

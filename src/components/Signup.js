@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import FormInput from './FormInput';
+
 class Signup extends React.Component {
   componentDidMount() {
     this.navElementActive();
@@ -20,64 +22,62 @@ class Signup extends React.Component {
         </h1>
         <div className="flex justify-center">
           <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <FormInput
+              type="text"
+              id="nombre"
+              text="Nombre(s)"
+              class="auth-input"
+            />
+
+            <FormInput
+              type="text"
+              id="apellidoP"
+              text="Apellido Paterno"
+              class="auth-input"
+            />
+
+            <FormInput
+              type="text"
+              id="apellidoM"
+              text="Apellido Materno"
+              class="auth-input"
+            />
+
             <div className="mb-4">
-              <label htmlFor="nombre" className="block font-bold mb-2 text-sm">
-                Nombre
+              <label htmlFor="celular" className="block font-bold mb-2 text-sm">
+                Celular
               </label>
               <input
-                id="nombre"
+                id="celular"
                 className="shadow rounded border border-pink-500 w-full py-2 px-3 text-gray-700 leading-tight"
-                placeholder="Nombre"
+                placeholder="Celular"
+                type="text"
               />
             </div>
 
-            <div className="mb-4">
-              <label
-                htmlFor="apellido"
-                className="block font-bold mb-2 text-sm"
-              >
-                Apellido
-              </label>
-              <input
-                id="apellido"
-                className="shadow rounded border border-pink-500 w-full py-2 px-3 text-gray-700 leading-tight"
-                placeholder="Apellido"
-              />
-            </div>
+            <FormInput
+              type="email"
+              id="email"
+              text="Email"
+              class="auth-input"
+            />
 
-            <div className="mb-4">
-              <label htmlFor="email" className="block font-bold mb-2 text-sm">
-                Correo
-              </label>
-              <input
-                id="email"
-                className="shadow rounded border border-pink-500 w-full py-2 px-3 text-gray-700 leading-tight"
-                placeholder="Correo"
-                type="email"
-              />
-            </div>
-
-            <div className="mb-4">
-              <label
-                htmlFor="password"
-                className="block font-bold mb-2 text-sm"
-              >
-                Contraseña
-              </label>
-              <input
-                id="password"
-                className="shadow rounded border border-pink-500 w-full py-2 px-3 text-gray-700 leading-tight"
-                placeholder="Contraseña"
-              />
-            </div>
+            <FormInput
+              type="password"
+              id="password"
+              text="Password"
+              class="auth-input"
+            />
 
             <div className="flex flex-wrap items-center justify-between">
-              <button
-                className="w-full bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
-              >
-                Registrarse
-              </button>
+              <Link to="/register/2">
+                <button
+                  className="w-full bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  type="button"
+                >
+                  Continuar
+                </button>
+              </Link>
             </div>
           </form>
         </div>
