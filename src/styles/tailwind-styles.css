@@ -11433,6 +11433,20 @@ video {
   line-height: 1.25;
 }
 
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

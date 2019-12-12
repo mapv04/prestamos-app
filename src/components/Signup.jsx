@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import FormInput from './FormInput';
+import FormButton from './FormButton';
 
 class Signup extends React.Component {
   componentDidMount() {
@@ -20,6 +20,9 @@ class Signup extends React.Component {
         <h1 className="text-center font-bold text-5xl text-pink-600 block">
           Registro
         </h1>
+        <h2 className="text-center font-bold text-lg text-pink-400 block mb-4">
+          Ingresa tus datos de contacto para ayudarte en todo momento
+        </h2>
         <div className="flex justify-center">
           <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <FormInput
@@ -43,17 +46,12 @@ class Signup extends React.Component {
               class="auth-input"
             />
 
-            <div className="mb-4">
-              <label htmlFor="celular" className="block font-bold mb-2 text-sm">
-                Celular
-              </label>
-              <input
-                id="celular"
-                className="shadow rounded border border-pink-500 w-full py-2 px-3 text-gray-700 leading-tight"
-                placeholder="Celular"
-                type="text"
-              />
-            </div>
+            <FormInput
+              type="number"
+              id="celular"
+              text="Celular"
+              class="auth-input"
+            />
 
             <FormInput
               type="email"
@@ -69,16 +67,7 @@ class Signup extends React.Component {
               class="auth-input"
             />
 
-            <div className="flex flex-wrap items-center justify-between">
-              <Link to="/register/2">
-                <button
-                  className="w-full bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  type="button"
-                >
-                  Continuar
-                </button>
-              </Link>
-            </div>
+            <FormButton to="/register/2" text="Continuar" />
           </form>
         </div>
       </div>
