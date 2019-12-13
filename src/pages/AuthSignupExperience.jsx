@@ -1,17 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import SignupLocation from '../components/SignupLocation';
+import SignupExperience from '../components/SignupExperience';
 import Footer from '../components/Footer';
 
-const AuthSignupLocation = () => (
+const AuthSignupExperience = () => (
   <div className="bg-gray-100 font-baskervville min-h-screen relative">
     <div className="pb-32">
       <Navbar />
-      <SignupLocation />
+      <SignupExperience />
     </div>
-
     <Footer />
   </div>
 );
 
-export default AuthSignupLocation;
+export default AuthSignupExperience;

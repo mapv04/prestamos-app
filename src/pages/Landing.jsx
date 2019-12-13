@@ -7,11 +7,13 @@ import Advantages from '../components/Advantages';
 import Footer from '../components/Footer';
 
 const Landing = () => (
-  <div className="bg-gray-100 font-baskervville">
-    <Navbar />
-    <Introduction />
-    <HowTo />
-    <Advantages />
+  <div className="font-baskervville bg-gray-100 min-h-screen relative">
+    <div className="pb-32">
+      <Navbar />
+      <Introduction />
+      <HowTo />
+      <Advantages />
+    </div>
     <Footer />
   </div>
 );

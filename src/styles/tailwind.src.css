@@ -32,3 +32,11 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+footer {
+  @apply h-32 w-full bg-pink-600 absolute bottom-0;
+}
+
+.simulator-card {
+  @apply flex flex-wrap bg-white border rounded-lg shadow-xl;
+}

@@ -83,19 +83,20 @@ class SimulatorPage extends React.Component {
 
   render() {
     return (
-      <div className="bg-gray-100 h-screen font-baskervville">
-        <Navbar />
-        <div className="pt-24 container mx-auto mb-24">
-          <h1 className="text-center font-bold text-5xl text-pink-600 block">
-            Simulador
-          </h1>
-          <p className="text-center">
-            Simula tu crédito en 3 pasos y calcula el monto, plazo y pagos de tu
-            crédito
-          </p>
-          <div className="m-4 flex justify-center">{this.whichComponent()}</div>
+      <div className="bg-gray-100 font-baskervville min-h-screen relative">
+        <div className="pb-32">
+          <Navbar />
+          <div className="pt-24 container mx-auto">
+            <h1 className="text-center font-bold text-5xl text-pink-600 block">
+              Simulador
+            </h1>
+            <p className="text-center">
+              Simula tu crédito en 3 pasos y calcula el monto, plazo y pagos de
+              tu crédito
+            </p>
+            <div className="flex justify-center">{this.whichComponent()}</div>
+          </div>
         </div>
-        <Footer />
       </div>
     );
   }

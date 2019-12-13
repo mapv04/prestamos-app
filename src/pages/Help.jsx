@@ -16,9 +16,11 @@ class Help extends React.Component {
 
   render() {
     return (
-      <div className="bg-gray-100 font-baskervville">
-        <Navbar />
-        <HelpComponent />
+      <div className="bg-gray-100 font-baskervville min-h-screen relative">
+        <div className="pb-32">
+          <Navbar />
+          <HelpComponent />
+        </div>
       </div>
     );
   }

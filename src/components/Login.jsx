@@ -20,7 +20,7 @@ class Login extends React.Component {
           Inicia sesión
         </h1>
         <div className="flex justify-center">
-          <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8">
             <FormInput
               type="email"
               id="email"

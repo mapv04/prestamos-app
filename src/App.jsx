@@ -8,6 +8,8 @@ import AuthSignupLocation from './pages/AuthSignupLocation';
 import SimulatorPage from './pages/SimulatorPage';
 import NotFound from './pages/NotFound';
 import Help from './pages/Help';
+import AuthSignupExperience from './pages/AuthSignupExperience';
+import AuthSignupAboutCompany from './pages/AuthSignupAboutCompany';
 
 function App() {
   return (
@@ -18,6 +20,16 @@ function App() {
         <Route exact path="/register" component={AuthSignup} />
         <Route exact path="/register/2" component={AuthSignup2} />
         <Route exact path="/register/location" component={AuthSignupLocation} />
+        <Route
+          exact
+          path="/register/experience"
+          component={AuthSignupExperience}
+        />
+        <Route
+          exact
+          path="/register/about"
+          component={AuthSignupAboutCompany}
+        />
         <Route exact path="/simulator" component={SimulatorPage} />
         <Route exact path="/help" component={Help} />
         <Route component={NotFound} />

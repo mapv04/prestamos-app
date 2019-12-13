@@ -13,7 +13,7 @@ class SimulatorData extends React.Component {
   render() {
     return (
       <div className="md:w-3/4 mb-20">
-        <div className="flex flex-wrap bg-white border rounded-lg shadow-xl  p-4 ">
+        <div className="simulator-card p-4 ">
           <h3 className="w-full text-center m-4 text-xl">
             {this.props.data.name} {this.props.data.lastName}
           </h3>

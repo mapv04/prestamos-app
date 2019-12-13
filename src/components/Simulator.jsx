@@ -12,7 +12,7 @@ class Simulator extends React.Component {
 
   render() {
     return (
-      <form className="flex flex-wrap bg-white border rounded-lg shadow-xl  md:w-3/4 p-4">
+      <form className="simulator-card  md:w-3/4 p-4">
         <div className="m-4">
           <label>Nombre</label>
           <input

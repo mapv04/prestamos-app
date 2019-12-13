@@ -8,36 +8,34 @@ import {
 
 function Footer() {
   return (
-    <footer className="w-full bg-pink-600 bottom-0">
+    <footer>
       <div className="m-auto container">
-        <div className="p-4">
-          <div className="w-24items-center">
-            <p className="font-bold text-4xl text-white">ATENAS</p>
-            <p className="text-white my-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-              fuga veritatisn{' '}
-            </p>
-            <section>
-              <FontAwesomeIcon
-                className="mx-2"
-                size="2x"
-                color="white"
-                icon={faFacebook}
-              />
-              <FontAwesomeIcon
-                className="mx-2"
-                size="2x"
-                color="white"
-                icon={faInstagram}
-              />
-              <FontAwesomeIcon
-                className="mx-2"
-                size="2x"
-                color="white"
-                icon={faTwitter}
-              />
-            </section>
-          </div>
+        <div className="items-center">
+          <p className="font-bold text-3xl text-white">ATENAS</p>
+          <p className="text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam fuga
+            veritatisn{' '}
+          </p>
+          <section>
+            <FontAwesomeIcon
+              className="mx-2"
+              size="2x"
+              color="white"
+              icon={faFacebook}
+            />
+            <FontAwesomeIcon
+              className="mx-2"
+              size="2x"
+              color="white"
+              icon={faInstagram}
+            />
+            <FontAwesomeIcon
+              className="mx-2"
+              size="2x"
+              color="white"
+              icon={faTwitter}
+            />
+          </section>
         </div>
       </div>
     </footer>

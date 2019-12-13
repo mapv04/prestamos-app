@@ -5,9 +5,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const Auth = () => (
-  <div className="bg-gray-100 h-screen font-baskervville">
-    <Navbar />
-    <Login />
+  <div className="bg-gray-100 min-h-screen font-baskervville relative">
+    <div className="pb-32">
+      <Navbar />
+      <Login />
+    </div>
     <Footer />
   </div>
 );

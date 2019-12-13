@@ -119,7 +119,7 @@ class SignupLocation extends React.Component {
                 />
               </div>
             </section>
-            <FormButton to="" text="Continuar" />
+            <FormButton to="/register/experience" text="Continuar" />
           </form>
         </div>
       </div>
