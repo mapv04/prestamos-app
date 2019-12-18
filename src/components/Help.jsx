@@ -1,4 +1,5 @@
 import React from 'react';
+import HelpItem from './HelpItem';
 
 class HelpComponent extends React.Component {
   onElementClick = e => {
@@ -14,7 +15,7 @@ class HelpComponent extends React.Component {
     return (
       <div className="mx-auto container pt-24">
         <h1 className="text-5xl text-center block">
-          <strong>Respuestas a las preguntas más frecuentes</strong>
+          <strong>Preguntas frecuentes</strong>
         </h1>
 
         <div>
@@ -29,6 +30,79 @@ class HelpComponent extends React.Component {
             <li>Cuenta bancaria</li>
           </ul>
         </div>
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿Piden aval o garantías?"
+          text="No nuestro compromiso es facilitar el acceso de las mujeres al financiamiento, por eso no pedimos ningún aval o garantía"
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿Qué es el CAT?"
+          text="El Costo Anual Total (CAT) es un indicador que sirve para calcular el costo total del financiamiento de un crédito, es decir, es una medida porcentual que integra no sólo la tasa de interés sino todos los elementos que al final tendrás que pagar tales como la cuota anual, comisiones de apertura o primas de seguros. 
+          Todos los otorgantes de crédito tienen, por ley, que calcular y comunicar este indicador para cada uno de sus productos con el fin de fomentar la transparencia sobre costos."
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿Cómo puedo hacer mis pagos?"
+          text="Puedes domiciliar los pagos, hacer transferencias o pagar en ventanilla de los bancos participantes"
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿Cuánto me pueden prestar y a qué plazo?"
+          text=""
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿Cuáles son los pasos para solicitar un crédito?"
+          text="Crea una cuenta, contesta nuestras preguntas y espera nuestra respuesta. Recuerda que puedes usar nuestro simulador para hacer un estamidado de tu crédito"
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="Una vez que aplico, ¿cuánto tarda Atenas en tomar una desición?"
+          text="Obtén una respuesta en menos de 30 minutos"
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿Por qué me rechazó mi crédito?"
+          text="Nuestras decisiones tomen en cuenta varios factores para otorgar un crédito. Consulta aquí para ver los mas importantes"
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿Cómo me depositan el dinero?"
+          text="Te depositamos en tu cuenta bancaria. ¡Así de fácil!"
+          onClickHandler={this.onElementClick}
+        />
       </div>
     );
   }

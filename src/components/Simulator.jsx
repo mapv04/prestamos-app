@@ -46,19 +46,7 @@ class Simulator extends React.Component {
             required
           />
         </div>
-        <div className="m-4">
-          <label>Que tan buen historial crediticio crees tener?</label>
-          <select
-            className="bg-white shadow rounded border block border-pink-500 w-auto py-2 px-3 text-gray-700 leading-tight"
-            name="creditHistory"
-            onChange={this.props.onChange}
-            required
-          >
-            <option value="AA">Bueno</option>
-            <option value="BB">Regular</option>
-            <option value="CC">Malo</option>
-          </select>
-        </div>
+
         <div className="m-4">
           <label className="block">Cuánto necesitas?</label>
           <input

@@ -20,6 +20,7 @@ class Help extends React.Component {
         <div className="pb-32">
           <Navbar />
           <HelpComponent />
+          <Footer />
         </div>
       </div>
     );

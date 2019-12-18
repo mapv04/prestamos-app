@@ -11,7 +11,7 @@ function HowTo() {
       <div className="text-left px-1">
         <h1 className="text-4xl md:text-6xl">
           <strong>
-            Solicita un crédito Pyme en 4 sencillos pasos con Atenas
+            Solicita un crédito para tu empresa en 4 sencillos pasos con Atenas
           </strong>
         </h1>
       </div>
