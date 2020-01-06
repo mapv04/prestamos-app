@@ -1,8 +1,6 @@
 import React from 'react';
 
-//FontAwsesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import Advantage from './Advantage';
 
 function Advantages() {
   return (
@@ -20,57 +18,10 @@ function Advantages() {
             <strong>Crédito Atenas</strong>
           </h3>
 
-          <div className="flex m-4 text-xl text-white">
-            <FontAwesomeIcon
-              className="m-3"
-              size="2x"
-              icon={faCheckCircle}
-              color="#4fc3f7"
-            />
-            <div>
-              <p>10 minutos</p>
-              <p>Tiempo para decidir el crédito</p>
-            </div>
-          </div>
-
-          <div className="flex m-4 text-xl text-white">
-            <FontAwesomeIcon
-              className="m-3"
-              size="2x"
-              icon={faCheckCircle}
-              color="#4fc3f7"
-            />
-            <div>
-              <p>10 minutos</p>
-              <p>Tiempo para decidir el crédito</p>
-            </div>
-          </div>
-
-          <div className="flex m-4 text-xl text-white">
-            <FontAwesomeIcon
-              className="m-3"
-              size="2x"
-              icon={faCheckCircle}
-              color="#4fc3f7"
-            />
-            <div>
-              <p>10 minutos</p>
-              <p>Tiempo para decidir el crédito</p>
-            </div>
-          </div>
-
-          <div className="flex m-4 text-xl text-white">
-            <FontAwesomeIcon
-              className="m-3"
-              size="2x"
-              icon={faCheckCircle}
-              color="#4fc3f7"
-            />
-            <div>
-              <p>10 minutos</p>
-              <p>Tiempo para decidir el crédito</p>
-            </div>
-          </div>
+          <Advantage text="Préstamos sin consultar buró*" />
+          <Advantage text="Préstamos sin aval" />
+          <Advantage text="Recibe respuesta de manera inmediata" />
+          <Advantage text="Te depositamos en tu cuenta bancaria" />
 
           <div />
         </div>

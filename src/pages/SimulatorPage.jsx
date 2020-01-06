@@ -3,7 +3,6 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Simulator from '../components/Simulator';
 import SimulatorData from '../components/SimulatorData';
-import Footer from '../components/Footer';
 
 import { calculateTasa } from '../tasas';
 

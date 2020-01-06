@@ -35,7 +35,34 @@ class HelpComponent extends React.Component {
           classTitle="text-2xl text-pink-500"
           classUl="list-disc hidden"
           title="¿Piden aval o garantías?"
-          text="No nuestro compromiso es facilitar el acceso de las mujeres al financiamiento, por eso no pedimos ningún aval o garantía"
+          text="No, nuestro compromiso es facilitar el acceso de las mujeres al financiamiento, por eso no pedimos ningún aval o garantía"
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿No consultan el buró de crédito??"
+          text="Si no cuentas con registro en el buró de crédito, no hay problema. Nuestro compromiso es incluir a todas las mujeres en el sistema financiero. Contamos con una inovadora manera de medir el riesgo."
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿Sí no checan el buró de crédito, como miden el riesgo?"
+          text="Medimos el riesgo calificando tu celular. Una vez que completes nuestro cuestionario te enviáremos un link a tu celular o correo para que descargues la app. Una vez descargada la app acepta los permisos para verificar  tu celular y listo. ¡Así de fácil!"
+          onClickHandler={this.onElementClick}
+        />
+
+        <HelpItem
+          classTitleContainer="cursor-pointer"
+          classTitle="text-2xl text-pink-500"
+          classUl="list-disc hidden"
+          title="¿Que usa de información la app para medir el riesgo?"
+          text="Nuestra app mide muchas variables, la mas importante son que tipo de apps usas, que tanto usas tu celular y que celular tienes."
           onClickHandler={this.onElementClick}
         />
 
@@ -63,7 +90,7 @@ class HelpComponent extends React.Component {
           classTitle="text-2xl text-pink-500"
           classUl="list-disc hidden"
           title="¿Cuánto me pueden prestar y a qué plazo?"
-          text=""
+          text="6-12-18-24 meses"
           onClickHandler={this.onElementClick}
         />
 
