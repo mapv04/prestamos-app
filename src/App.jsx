@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Landing from './pages/Landing';
 import Auth from './pages/Auth';
 import AuthSignup from './pages/AuthSignup';
@@ -13,7 +13,7 @@ import AuthSignupAboutCompany from './pages/AuthSignupAboutCompany';
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route exact path="/login" component={Auth} />
@@ -34,7 +34,7 @@ function App() {
         <Route exact path="/help" component={Help} />
         <Route component={NotFound} />
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
