@@ -6,7 +6,6 @@ import AuthSignup from './pages/AuthSignup';
 import AuthSignup2 from './pages/AuthSignup2';
 import AuthSignupLocation from './pages/AuthSignupLocation';
 import SimulatorPage from './pages/SimulatorPage';
-import NotFound from './pages/NotFound';
 import Help from './pages/Help';
 import AuthSignupExperience from './pages/AuthSignupExperience';
 import AuthSignupAboutCompany from './pages/AuthSignupAboutCompany';
@@ -32,7 +31,6 @@ function App() {
         />
         <Route exact path="/simulator" component={SimulatorPage} />
         <Route exact path="/help" component={Help} />
-        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
   );

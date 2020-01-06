@@ -54573,14 +54573,3 @@ footer {
   display: block;
 }
 
-.rotateImg {
-  transform: rotate(-270deg);
-}
-
-.imageDimensions {
-  height: 20rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
