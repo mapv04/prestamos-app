@@ -1,6 +1,9 @@
 {
   "name": "prestamos-app",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.13.1"
+  },
   "private": true,
   "homepage": "https://mapv04.github.io/prestamos-app/",
   "dependencies": {
