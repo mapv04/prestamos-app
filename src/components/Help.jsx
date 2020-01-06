@@ -27,7 +27,6 @@ class HelpComponent extends React.Component {
             <li>INE(debes ser mexicana entre 25 y 90 años)</li>
             <li>RFC con el que facturas</li>
             <li>Último recibo de luz</li>
-            <li>Cuenta bancaria</li>
           </ul>
         </div>
 
