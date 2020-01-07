@@ -15,8 +15,7 @@ class SimulatorPage extends React.Component {
       email: '',
       quantity: '',
       months: '',
-      phone: '',
-      creditHistory: ''
+      phone: ''
     },
     simulator: {
       capital: '',
@@ -44,10 +43,7 @@ class SimulatorPage extends React.Component {
 
   simulate() {
     const months = this.state.form.months || 6;
-    const tasas = calculateTasa(
-      parseInt(months),
-      this.state.form.creditHistory || 'AA'
-    );
+    const tasas = calculateTasa(parseInt(months));
 
     const pow = Math.pow(1 + tasas[0], months);
     const saldo = parseFloat(this.state.form.quantity);

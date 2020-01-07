@@ -43,7 +43,7 @@ class HelpComponent extends React.Component {
           classTitleContainer="cursor-pointer"
           classTitle="text-2xl text-pink-500"
           classUl="list-disc hidden"
-          title="¿No consultan el buró de crédito??"
+          title="¿No consultan el buró de crédito?"
           text="Si no cuentas con registro en el buró de crédito, no hay problema. Nuestro compromiso es incluir a todas las mujeres en el sistema financiero. Contamos con una inovadora manera de medir el riesgo."
           onClickHandler={this.onElementClick}
         />
