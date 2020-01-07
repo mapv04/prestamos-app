@@ -50,7 +50,7 @@ class Simulator extends React.Component {
         <div className="m-4">
           <label className="block">Cuánto necesitas?</label>
           <input
-            type="text"
+            type="number"
             placeholder="100,000"
             className="shadow rounded border border-pink-500  py-2 px-3 text-gray-700 leading-tight"
             name="quantity"
@@ -75,7 +75,7 @@ class Simulator extends React.Component {
         <div className="m-4">
           <label className="block">Teléfono</label>
           <input
-            type="text"
+            type="number"
             placeholder="Telefono"
             className="shadow rounded border border-pink-500  py-2 px-3 text-gray-700 leading-tight"
             name="phone"

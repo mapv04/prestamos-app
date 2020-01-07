@@ -8,19 +8,19 @@ export function calculateTasa(months) {
   switch (months) {
     case 6:
       tasaAnual = BB[0];
-      tasaMensual = BB[0] / months;
+      tasaMensual = BB[0] / 12;
       break;
     case 12:
       tasaAnual = BB[1];
-      tasaMensual = BB[1] / months;
+      tasaMensual = BB[1] / 12;
       break;
     case 18:
       tasaAnual = BB[2];
-      tasaMensual = BB[2] / months;
+      tasaMensual = BB[2] / 12;
       break;
     case 24:
       tasaAnual = BB[3];
-      tasaMensual = BB[3] / months;
+      tasaMensual = BB[3] / 12;
       break;
     default:
       return 0;

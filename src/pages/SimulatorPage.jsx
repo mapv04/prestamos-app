@@ -35,10 +35,13 @@ class SimulatorPage extends React.Component {
   };
 
   handleSubmit = e => {
-    this.setState({
-      data: true
-    });
-    this.simulate();
+    const { name, lastName, email, quantity, phone } = this.state.form;
+    if (name && lastName && email && quantity && phone) {
+      this.setState({
+        data: true
+      });
+      this.simulate();
+    }
   };
 
   simulate() {
