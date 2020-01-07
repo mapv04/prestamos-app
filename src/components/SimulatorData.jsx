@@ -1,5 +1,7 @@
 import React from 'react';
 
+import FormButton from './FormButton';
+
 class SimulatorData extends React.Component {
   componentDidMount() {
     this.navElementActive();
@@ -59,6 +61,7 @@ class SimulatorData extends React.Component {
                 clientes reciben esta oferta)
               </p>
             </div>
+            <FormButton to="/register" text="Solicitalo Ahora!!!" />
           </div>
         </div>
         <div className="text-center m-8">
