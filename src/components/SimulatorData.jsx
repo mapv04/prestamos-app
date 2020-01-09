@@ -1,4 +1,5 @@
 import React from 'react';
+import NumberFormat from 'react-number-format';
 
 import FormButton from './FormButton';
 
@@ -43,7 +44,13 @@ class SimulatorData extends React.Component {
             </div>
             <div className="m-4">
               <p>Pago total mensual</p>
-              <p className="text-pink-400">{this.props.simulator.total}</p>
+              <NumberFormat
+                className="text-pink-400"
+                prefix={'$'}
+                thousandSeparator={true}
+                value={this.props.simulator.total}
+                displayType={'text'}
+              />
             </div>
             <div className="m-4">
               <p>Tasa Anual</p>

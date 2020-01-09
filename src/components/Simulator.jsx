@@ -1,4 +1,5 @@
 import React from 'react';
+import NumberFormat from 'react-number-format';
 
 class Simulator extends React.Component {
   componentDidMount() {
@@ -49,13 +50,15 @@ class Simulator extends React.Component {
 
         <div className="m-4">
           <label className="block">Cuánto necesitas?</label>
-          <input
-            type="number"
+          <NumberFormat
+            name="quantity"
             placeholder="100,000"
             className="shadow rounded border border-pink-500  py-2 px-3 text-gray-700 leading-tight"
-            name="quantity"
             onChange={this.props.onChange}
             required
+            prefix={'$'}
+            thousandSeparator={true}
+            allowNegative={false}
           />
         </div>
         <div className="m-4">

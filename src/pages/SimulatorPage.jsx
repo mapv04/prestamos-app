@@ -48,8 +48,10 @@ class SimulatorPage extends React.Component {
     const months = this.state.form.months || 6;
     const tasas = calculateTasa(parseInt(months));
 
+    const quantity = this.state.form.quantity.replace(/,/g, '').substring(1);
+
     const pow = Math.pow(1 + tasas[0], months);
-    const saldo = parseFloat(this.state.form.quantity);
+    const saldo = parseFloat(quantity);
     const total = parseFloat(((saldo * tasas[0] * pow) / (pow - 1)).toFixed(2));
     const capital = parseFloat((total - saldo * tasas[0]).toFixed(2));
     const tax = parseFloat((total - capital).toFixed(2));
