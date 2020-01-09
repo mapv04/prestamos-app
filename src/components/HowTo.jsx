@@ -1,9 +1,11 @@
 import React from 'react';
-import howto1 from '../images/how-01.png';
-import howto2 from '../images/how-02.png';
-import howto3 from '../images/how-03.png';
-import howto4 from '../images/how-04.png';
-import howto5 from '../images/how-05.png';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { faReply } from '@fortawesome/free-solid-svg-icons';
+import { faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
+import { faRedo } from '@fortawesome/free-solid-svg-icons';
 
 function HowTo() {
   return (
@@ -18,36 +20,36 @@ function HowTo() {
 
       <div className="flex flex-wrap justify-around text-center mt-6">
         <div className="md:w-1/3 p-5">
-          <img
-            className="mx-auto"
-            src={howto1}
-            alt=""
-            style={{ height: 160 }}
+          <FontAwesomeIcon
+            className="mx-auto mb-4"
+            icon={faClock}
+            size="7x"
+            color="#4fc3f7"
           />
           <p>
             Es una solicitud rápida y sencilla. Sólo toma 10 minutos el proceso.
           </p>
         </div>
         <div className="md:w-1/3 p-5">
-          <img
-            className="mx-auto"
-            src={howto2}
-            alt=""
-            style={{ height: 160 }}
+          <FontAwesomeIcon
+            className="mx-auto mb-4"
+            icon={faReply}
+            size="7x"
+            color="#4fc3f7"
           />
           <p>
             Puedes recibir una respuesta en menos de dos días – sin filas,
             documentación innecesaria y sin obligaciones. Tratamos de hacer todo
             lo más transparente posible. Sin letras pequeñas ni tarifas
-            escondidas
+            escondidas.
           </p>
         </div>
         <div className="md:w-1/3 p-5">
-          <img
-            className="mx-auto"
-            src={howto3}
-            alt=""
-            style={{ height: 160 }}
+          <FontAwesomeIcon
+            className="mx-auto mb-4"
+            icon={faHandHoldingUsd}
+            size="7x"
+            color="#4fc3f7"
           />
           <p>
             Recibe tus fondos y sólo paga por lo que recibas. Una vez
@@ -55,23 +57,23 @@ function HowTo() {
           </p>
         </div>
         <div className="md:w-1/3 p-5">
-          <img
-            className="mx-auto"
-            src={howto4}
-            alt=""
-            style={{ height: 160 }}
+          <FontAwesomeIcon
+            className="mx-auto mb-4"
+            icon={faMobileAlt}
+            size="7x"
+            color="#4fc3f7"
           />
           <p>
-            No te preocupes del pago. Este se hace semana con semana lo cual te
-            permite que no crezca al final del mes en un pago difícil de hacer
+            Si no cuentas con buró de crédito no hay problema, medimos el riesgo
+            de manera innovadora.
           </p>
         </div>
         <div className="md:w-1/3 p-5">
-          <img
-            className="mx-auto"
-            src={howto5}
-            alt=""
-            style={{ height: 160 }}
+          <FontAwesomeIcon
+            className="mx-auto mb-4"
+            icon={faRedo}
+            size="7x"
+            color="#4fc3f7"
           />
           <p>
             Una vez que pagues una cierta cantidad, podrás volver a solicitar

@@ -13,8 +13,7 @@ function Footer() {
         <div className="items-center">
           <p className="font-bold text-3xl text-white">ATENAS</p>
           <p className="text-white">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam fuga
-            veritatisn{' '}
+            Paseo de Los Virreyes 45, Puerta de Hierro, 45116 Zapopan, Jal
           </p>
           <section>
             <FontAwesomeIcon

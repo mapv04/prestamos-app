@@ -91,7 +91,7 @@ class Simulator extends React.Component {
         </div>
 
         <button
-          className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline block m-4"
+          className="w-full bg-pink-500 hover:bg-pink-700 text-white text-center font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline block m-4"
           onClick={this.props.onSubmit}
         >
           Solicitar
