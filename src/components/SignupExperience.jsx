@@ -20,7 +20,7 @@ class SignupExperience extends React.Component {
           Registro
         </h1>
         <h2 className="text-center font-bold text-lg text-pink-400 block mb-4">
-          Hablanos de tu experiencia, tu historial de credito es clave para
+          Hablanos de tu experiencia, tu historial de crédito es clave para
           conocerte mejor y diseñar tu oferta
         </h2>
         <div className="flex justify-center">
@@ -42,7 +42,7 @@ class SignupExperience extends React.Component {
             </select>
 
             <label htmlFor="tarjeta" className="block font-bold mb-2 text-sm">
-              Eres tirular de una tarjeta de credito?
+              Eres titular de una tarjeta de crédito?
             </label>
             <select id="tarjeta" className="auth-input" required>
               <option value="">Si</option>

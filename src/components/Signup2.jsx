@@ -21,8 +21,8 @@ class Signup2 extends React.Component {
           Registro
         </h1>
         <h2 className="text-center font-bold text-lg text-pink-400 block mb-4">
-          Pra iniciar tu solicitud calcularemos tu RFC y CURP con la siguiente
-          informacion
+          Para iniciar tu solicitud calcularemos tu RFC y CURP con la siguiente
+          información
         </h2>
         <div className="flex justify-center">
           <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
