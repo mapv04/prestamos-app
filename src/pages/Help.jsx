@@ -1,8 +1,7 @@
 import React from 'react';
 
-import Navbar from '../components/Navbar';
-import HelpComponent from '../components/Help';
-import Footer from '../components/Footer';
+import Container from '../components/Container';
+import HelpComponent from '../components/help/Help';
 
 class Help extends React.Component {
   componentDidMount() {
@@ -10,20 +9,12 @@ class Help extends React.Component {
   }
 
   navElementActive() {
-    var navElement = document.getElementsByTagName('a')[4];
+    var navElement = document.getElementsByTagName('a')[3];
     navElement.classList.add('border-pink-400');
   }
 
   render() {
-    return (
-      <div className="bg-gray-100 font-baskervville min-h-screen relative">
-        <div className="pb-32">
-          <Navbar />
-          <HelpComponent />
-          <Footer />
-        </div>
-      </div>
-    );
+    return <Container content={<HelpComponent />} />;
   }
 }
 

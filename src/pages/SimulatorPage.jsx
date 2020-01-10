@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Navbar from '../components/Navbar';
-import Simulator from '../components/Simulator';
-import SimulatorData from '../components/SimulatorData';
+import Simulator from '../components/simulator/Simulator';
+import SimulatorData from '../components/simulator/SimulatorData';
 
 import { calculateTasa } from '../tasas';
 

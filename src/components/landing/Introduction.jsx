@@ -1,5 +1,5 @@
 import React from 'react';
-import bussinesWomanImage from '../images/bussines_woman.jpg';
+import bussinesWomanImage from '../../images/bussines_woman.jpg';
 
 function Introduction() {
   return (

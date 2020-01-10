@@ -1,21 +1,20 @@
 import React from 'react';
-import '../styles/tailwind-styles.css';
-import Navbar from '../components/Navbar';
-import Introduction from '../components/Introduction';
-import HowTo from '../components/HowTo';
-import Advantages from '../components/Advantages';
-import Footer from '../components/Footer';
+
+import Container from '../components/Container';
+import Introduction from '../components/landing/Introduction';
+import HowTo from '../components/landing/HowTo';
+import Advantages from '../components/landing/Advantages';
 
 const Landing = () => (
-  <div className="font-baskervville bg-gray-100 min-h-screen relative">
-    <div className="pb-32">
-      <Navbar />
-      <Introduction />
-      <HowTo />
-      <Advantages />
-    </div>
-    <Footer />
-  </div>
+  <Container
+    content={
+      <React.Fragment>
+        <Introduction />
+        <HowTo />
+        <Advantages />
+      </React.Fragment>
+    }
+  />
 );
 
 export default Landing;

@@ -1,7 +1,8 @@
 import React from 'react';
 
-import FormInput from './FormInput';
-import FormButton from './FormButton';
+import SignupContainer from './SignupContainer';
+import FormInput from '../FormInput';
+import FormButton from '../FormButton';
 
 class SignupLocation extends React.Component {
   componentDidMount() {
@@ -9,22 +10,18 @@ class SignupLocation extends React.Component {
   }
 
   navElementActive() {
-    var navElement = document.getElementsByTagName('a')[5];
+    var navElement = document.getElementsByTagName('a')[4];
     navElement.textContent = 'Registro';
     navElement.classList.add('border-pink-400');
   }
 
   render() {
     return (
-      <div className="pt-24 container mx-auto h-full">
-        <h1 className="text-center font-bold text-5xl text-pink-600 block">
-          Registro
-        </h1>
-        <h2 className="text-center font-bold text-lg text-pink-400 block mb-4">
-          Cuentanos donde vives y donde opera tu negocio actualmente
-        </h2>
-        <div className="flex justify-center">
-          <form className="w-4/5 md:w-2/3 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <SignupContainer
+        title="Cuentanos donde vives y donde opera tu negocio actualmente"
+        formClassName="auth-form md:w-2/3"
+        content={
+          <div>
             <h3 className="text-lg mb-2">Tu dirección personal</h3>
 
             <section className="flex flex-wrap">
@@ -120,9 +117,9 @@ class SignupLocation extends React.Component {
               </div>
             </section>
             <FormButton to="/register/experience" text="Continuar" />
-          </form>
-        </div>
-      </div>
+          </div>
+        }
+      />
     );
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import FormInput from './FormInput';
+import FormInput from '../FormInput';
 
 class Login extends React.Component {
   componentDidMount() {
@@ -9,7 +9,7 @@ class Login extends React.Component {
   }
 
   navElementActive() {
-    var navElement = document.getElementsByTagName('a')[5];
+    var navElement = document.getElementsByTagName('a')[4];
     navElement.classList.add('border-pink-400');
   }
 
@@ -20,7 +20,7 @@ class Login extends React.Component {
           Inicia sesión
         </h1>
         <div className="flex justify-center">
-          <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8">
+          <form className="auth-form">
             <FormInput
               type="email"
               id="email"

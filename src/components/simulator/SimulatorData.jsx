@@ -1,7 +1,7 @@
 import React from 'react';
 import NumberFormat from 'react-number-format';
 
-import FormButton from './FormButton';
+import FormButton from '../FormButton';
 
 class SimulatorData extends React.Component {
   componentDidMount() {

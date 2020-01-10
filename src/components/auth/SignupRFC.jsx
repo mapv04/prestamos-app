@@ -1,31 +1,28 @@
 import React from 'react';
 
-import FormInput from './FormInput';
-import FormButton from './FormButton';
+import SignupContainer from './SignupContainer';
+import FormInput from '../FormInput';
+import FormButton from '../FormButton';
 
-class Signup2 extends React.Component {
+class SignupRFC extends React.Component {
   componentDidMount() {
     this.navElementActive();
   }
 
   navElementActive() {
-    var navElement = document.getElementsByTagName('a')[5];
+    var navElement = document.getElementsByTagName('a')[4];
     navElement.textContent = 'Registro';
     navElement.classList.add('border-pink-400');
   }
 
   render() {
     return (
-      <div className="pt-24 container mx-auto h-full">
-        <h1 className="text-center font-bold text-5xl text-pink-600 block">
-          Registro
-        </h1>
-        <h2 className="text-center font-bold text-lg text-pink-400 block mb-4">
-          Para iniciar tu solicitud calcularemos tu RFC y CURP con la siguiente
-          información
-        </h2>
-        <div className="flex justify-center">
-          <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <SignupContainer
+        title="Para iniciar tu solicitud calcularemos tu RFC y CURP con la siguiente
+          información"
+        formClassName="auth-form"
+        content={
+          <div>
             <FormInput type="number" id="dia" text="Dia" class="auth-input" />
             <label htmlFor="mes" className="block font-bold mb-2 text-sm">
               Mes
@@ -57,11 +54,11 @@ class Signup2 extends React.Component {
             <FormInput type="text" id="curp" text="Curp" class="auth-input" />
 
             <FormButton to="/register/location" text="Continuar" />
-          </form>
-        </div>
-      </div>
+          </div>
+        }
+      />
     );
   }
 }
 
-export default Signup2;
+export default SignupRFC;

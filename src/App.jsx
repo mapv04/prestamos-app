@@ -1,14 +1,25 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+//css
+import './styles/tailwind-styles.css';
+
+//landing
 import Landing from './pages/Landing';
-import Auth from './pages/Auth';
-import AuthSignup from './pages/AuthSignup';
-import AuthSignup2 from './pages/AuthSignup2';
-import AuthSignupLocation from './pages/AuthSignupLocation';
+
+//Auth
+import Auth from './pages/auth/Auth';
+import AuthSignup from './pages/auth/AuthSignup';
+import AuthSignupRFC from './pages/auth/AuthSignupRFC';
+import AuthSignupLocation from './pages/auth/AuthSignupLocation';
+import AuthSignupExperience from './pages/auth/AuthSignupExperience';
+import AuthSignupAboutCompany from './pages/auth/AuthSignupAboutCompany';
+
+//simulator
 import SimulatorPage from './pages/SimulatorPage';
+
+//help
 import Help from './pages/Help';
-import AuthSignupExperience from './pages/AuthSignupExperience';
-import AuthSignupAboutCompany from './pages/AuthSignupAboutCompany';
 
 function App() {
   return (
@@ -17,7 +28,7 @@ function App() {
         <Route exact path="/" component={Landing} />
         <Route exact path="/login" component={Auth} />
         <Route exact path="/register" component={AuthSignup} />
-        <Route exact path="/register/2" component={AuthSignup2} />
+        <Route exact path="/register/rfc" component={AuthSignupRFC} />
         <Route exact path="/register/location" component={AuthSignupLocation} />
         <Route
           exact
@@ -26,7 +37,7 @@ function App() {
         />
         <Route
           exact
-          path="/register/about"
+          path="/register/company"
           component={AuthSignupAboutCompany}
         />
         <Route exact path="/simulator" component={SimulatorPage} />

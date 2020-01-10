@@ -1,7 +1,8 @@
 import React from 'react';
 
-import FormInput from './FormInput';
-import FormButton from './FormButton';
+import SignupContainer from './SignupContainer';
+import FormInput from '../FormInput';
+import FormButton from '../FormButton';
 
 class Signup extends React.Component {
   componentDidMount() {
@@ -9,22 +10,18 @@ class Signup extends React.Component {
   }
 
   navElementActive() {
-    var navElement = document.getElementsByTagName('a')[5];
+    var navElement = document.getElementsByTagName('a')[4];
     navElement.textContent = 'Registro';
     navElement.classList.add('border-pink-400');
   }
 
   render() {
     return (
-      <div className="pt-24 container mx-auto">
-        <h1 className="text-center font-bold text-5xl text-pink-600 block">
-          Registro
-        </h1>
-        <h2 className="text-center font-bold text-lg text-pink-400 block mb-4">
-          Ingresa tus datos de contacto para ayudarte en todo momento
-        </h2>
-        <div className="flex justify-center">
-          <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <SignupContainer
+        title="Ingresa tus datos de contacto para ayudarte en todo momento"
+        formClassName="auth-form"
+        content={
+          <div>
             <FormInput
               type="text"
               id="nombre"
@@ -67,10 +64,10 @@ class Signup extends React.Component {
               class="auth-input"
             />
 
-            <FormButton to="/register/2" text="Registrar" />
-          </form>
-        </div>
-      </div>
+            <FormButton to="/register/rfc" text="Registrar" />
+          </div>
+        }
+      />
     );
   }
 }

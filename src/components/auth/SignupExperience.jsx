@@ -1,6 +1,7 @@
 import React from 'react';
 
-import FormButton from './FormButton';
+import SignupContainer from './SignupContainer';
+import FormButton from '../FormButton';
 
 class SignupExperience extends React.Component {
   componentDidMount() {
@@ -8,23 +9,19 @@ class SignupExperience extends React.Component {
   }
 
   navElementActive() {
-    var navElement = document.getElementsByTagName('a')[5];
+    var navElement = document.getElementsByTagName('a')[4];
     navElement.textContent = 'Registro';
     navElement.classList.add('border-pink-400');
   }
 
   render() {
     return (
-      <div className="pt-24 container mx-auto">
-        <h1 className="text-center font-bold text-5xl text-pink-600 block">
-          Registro
-        </h1>
-        <h2 className="text-center font-bold text-lg text-pink-400 block mb-4">
-          Hablanos de tu experiencia, tu historial de crédito es clave para
-          conocerte mejor y diseñar tu oferta
-        </h2>
-        <div className="flex justify-center">
-          <form className="w-4/5 md:w-1/3 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <SignupContainer
+        title="Hablanos de tu experiencia, tu historial de crédito es clave para
+          conocerte mejor y diseñar tu oferta"
+        formClassName="auth-form"
+        content={
+          <div>
             <label htmlFor="hipoteca" className="block font-bold mb-2 text-sm">
               Tienes un prestamo hipotecario?
             </label>
@@ -55,10 +52,10 @@ class SignupExperience extends React.Component {
               Crediticia
             </div>
 
-            <FormButton to="/register/about" text="Continuar" />
-          </form>
-        </div>
-      </div>
+            <FormButton to="/register/company" text="Continuar" />
+          </div>
+        }
+      />
     );
   }
 }
