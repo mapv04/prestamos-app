@@ -9,10 +9,6 @@
   src: url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
 }
 
-.navbar {
-  @apply w-full h-20 fixed bg-white shadow-xl;
-}
-
 .font-baskervville {
   font-family: 'Baskervville';
 }
@@ -43,6 +39,20 @@ footer {
 
 .auth-form {
   @apply w-4/5 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4;
+}
+
+.nav {
+  @apply w-full fixed h-20  bg-white shadow-xl flex flex-wrap items-center;
+}
+
+.nav-navbar {
+  @apply mx-auto flex flex-wrap   px-6  py-2 bg-white;
+}
+
+@screen lg {
+  .nav-navbar {
+    @apply px-16 py-0;
+  }
 }
 
 @screen md {
