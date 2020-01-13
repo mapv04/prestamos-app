@@ -14,7 +14,7 @@ class HelpComponent extends React.Component {
   render() {
     return (
       <div className="mx-auto container pt-24">
-        <h1 className="text-5xl text-center block">
+        <h1 className="text-5xl text-pink-600 text-center block">
           <strong>Preguntas frecuentes</strong>
         </h1>
 

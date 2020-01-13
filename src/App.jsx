@@ -21,6 +21,9 @@ import SimulatorPage from './pages/SimulatorPage';
 //help
 import Help from './pages/Help';
 
+//about
+import About from './pages/About';
+
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -42,6 +45,7 @@ function App() {
         />
         <Route exact path="/simulator" component={SimulatorPage} />
         <Route exact path="/help" component={Help} />
+        <Route exact path="/about" component={About} />
       </Switch>
     </BrowserRouter>
   );
