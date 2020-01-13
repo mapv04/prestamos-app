@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import SignupContainer from './SignupContainer';
 import FormInput from '../FormInput';
 
 class Login extends React.Component {
@@ -15,12 +16,11 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="pt-24 container mx-auto h-full">
-        <h1 className="text-center font-bold text-5xl text-pink-600 block">
-          Inicia sesión
-        </h1>
-        <div className="flex justify-center">
-          <form className="auth-form">
+      <SignupContainer
+        titlePage="Iniciar sesión"
+        formClassName="auth-form"
+        content={
+          <div>
             <FormInput
               type="email"
               id="email"
@@ -61,9 +61,9 @@ class Login extends React.Component {
                 </Link>
               </h2>
             </div>
-          </form>
-        </div>
-      </div>
+          </div>
+        }
+      />
     );
   }
 }
