@@ -5089,16 +5089,8 @@ video {
   max-width: 100%;
 }
 
-.min-h-0 {
-  min-height: 0;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
-.min-h-screen {
-  min-height: 100vh;
+.min-h-nav {
+  min-height: 5rem;
 }
 
 .min-w-0 {
@@ -11407,14 +11399,6 @@ video {
   src: url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
 }
 
-.navbar {
-  width: 100%;
-  height: 5rem;
-  position: fixed;
-  background-color: #fff;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
 .font-baskervville {
   font-family: 'Baskervville';
 }
@@ -11480,7 +11464,7 @@ footer {
 .nav {
   width: 100%;
   position: fixed;
-  height: 5rem;
+  min-height: 5rem;
   background-color: #fff;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   display: -webkit-box;
@@ -15981,16 +15965,8 @@ footer {
     max-width: 100%;
   }
 
-  .sm\:min-h-0 {
-    min-height: 0;
-  }
-
-  .sm\:min-h-full {
-    min-height: 100%;
-  }
-
-  .sm\:min-h-screen {
-    min-height: 100vh;
+  .sm\:min-h-nav {
+    min-height: 5rem;
   }
 
   .sm\:min-w-0 {
@@ -26757,16 +26733,8 @@ footer {
     max-width: 100%;
   }
 
-  .md\:min-h-0 {
-    min-height: 0;
-  }
-
-  .md\:min-h-full {
-    min-height: 100%;
-  }
-
-  .md\:min-h-screen {
-    min-height: 100vh;
+  .md\:min-h-nav {
+    min-height: 5rem;
   }
 
   .md\:min-w-0 {
@@ -37533,16 +37501,8 @@ footer {
     max-width: 100%;
   }
 
-  .lg\:min-h-0 {
-    min-height: 0;
-  }
-
-  .lg\:min-h-full {
-    min-height: 100%;
-  }
-
-  .lg\:min-h-screen {
-    min-height: 100vh;
+  .lg\:min-h-nav {
+    min-height: 5rem;
   }
 
   .lg\:min-w-0 {
@@ -48309,16 +48269,8 @@ footer {
     max-width: 100%;
   }
 
-  .xl\:min-h-0 {
-    min-height: 0;
-  }
-
-  .xl\:min-h-full {
-    min-height: 100%;
-  }
-
-  .xl\:min-h-screen {
-    min-height: 100vh;
+  .xl\:min-h-nav {
+    min-height: 5rem;
   }
 
   .xl\:min-w-0 {

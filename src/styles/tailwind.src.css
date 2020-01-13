@@ -42,7 +42,7 @@ footer {
 }
 
 .nav {
-  @apply w-full fixed h-20  bg-white shadow-xl flex flex-wrap items-center;
+  @apply w-full fixed min-h-nav  bg-white shadow-xl flex flex-wrap items-center;
 }
 
 .nav-navbar {
