@@ -40,7 +40,7 @@ class Login extends React.Component {
                 to="#"
                 className="inline-block align-baseline font-bold text-xs text-pink-400 hover:text-pink-600 mt-4 md:m-0"
               >
-                Olvidaste tu contraseña?
+                ¿Olvidaste tu contraseña?
               </Link>
             </div>
 
@@ -52,7 +52,7 @@ class Login extends React.Component {
                 Entrar
               </button>
               <h2 className="inline-block align-baseline font-bold text-sm text-pink-500 mt-4 md:m-0">
-                No tienes una cuenta?{' '}
+                ¿No tienes una cuenta?{' '}
                 <Link
                   to="/register"
                   className="border-b-2 border-transparent hover:border-pink-700 hover:text-pink-700"

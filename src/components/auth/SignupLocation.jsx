@@ -70,7 +70,9 @@ class SignupLocation extends React.Component {
               </div>
             </section>
             <hr className="w-full my-4 border-pink-200" />
-            <h3 className="text-lg mb-2">Dónde opera tu negocio actualmente</h3>
+            <h3 className="text-lg mb-2">
+              ¿Dónde opera tu negocio actualmente?
+            </h3>
             <section className="flex flex-wrap mb-4">
               <div className="mx-2">
                 <FormInput

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Navbar from '../components/Navbar';
 import Simulator from '../components/simulator/Simulator';
-import SimulatorData from '../components/simulator/SimulatorData';
+import SimulatorOutput from '../components/simulator/SimulatorOutput';
 
 import { calculateTasa } from '../tasas';
 
@@ -77,7 +77,10 @@ class SimulatorPage extends React.Component {
       );
     }
     return (
-      <SimulatorData data={this.state.form} simulator={this.state.simulator} />
+      <SimulatorOutput
+        data={this.state.form}
+        simulator={this.state.simulator}
+      />
     );
   }
 

@@ -49,7 +49,7 @@ class Simulator extends React.Component {
         </div>
 
         <div className="m-4">
-          <label className="block">Cuánto necesitas?</label>
+          <label className="block">¿Cuánto necesitas?</label>
           <NumberFormat
             name="quantity"
             placeholder="100,000"

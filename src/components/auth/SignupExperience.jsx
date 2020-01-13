@@ -23,7 +23,7 @@ class SignupExperience extends React.Component {
         content={
           <div>
             <label htmlFor="hipoteca" className="block font-bold mb-2 text-sm">
-              Tienes un prestamo hipotecario?
+              ¿Tienes un prestamo hipotecario?
             </label>
             <select id="hipoteca" className="auth-input" required>
               <option value="">Si</option>
@@ -31,7 +31,7 @@ class SignupExperience extends React.Component {
             </select>
 
             <label htmlFor="pres-auto" className="block font-bold mb-2 text-sm">
-              Has tenido un credito automotriz
+              ¿Has tenido un credito automotriz?
             </label>
             <select id="pres-auto" className="auth-input" required>
               <option value="">Si</option>
@@ -39,7 +39,7 @@ class SignupExperience extends React.Component {
             </select>
 
             <label htmlFor="tarjeta" className="block font-bold mb-2 text-sm">
-              Eres titular de una tarjeta de crédito?
+              ¿Eres titular de una tarjeta de crédito?
             </label>
             <select id="tarjeta" className="auth-input" required>
               <option value="">Si</option>

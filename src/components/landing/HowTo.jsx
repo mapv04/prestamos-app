@@ -24,7 +24,7 @@ function HowTo() {
             className="mx-auto mb-4"
             icon={faClock}
             size="7x"
-            color="#4fc3f7"
+            color="#ed64a6"
           />
           <p>
             Es una solicitud rápida y sencilla. Sólo toma 10 minutos el proceso.
@@ -35,7 +35,7 @@ function HowTo() {
             className="mx-auto mb-4"
             icon={faReply}
             size="7x"
-            color="#4fc3f7"
+            color="#ed64a6"
           />
           <p>
             Puedes recibir una respuesta en menos de dos días – sin filas,
@@ -49,7 +49,7 @@ function HowTo() {
             className="mx-auto mb-4"
             icon={faHandHoldingUsd}
             size="7x"
-            color="#4fc3f7"
+            color="#ed64a6"
           />
           <p>
             Recibe tus fondos y sólo paga por lo que recibas. Una vez
@@ -61,7 +61,7 @@ function HowTo() {
             className="mx-auto mb-4"
             icon={faMobileAlt}
             size="7x"
-            color="#4fc3f7"
+            color="#ed64a6"
           />
           <p>
             Si no cuentas con buró de crédito no hay problema, medimos el riesgo
@@ -73,7 +73,7 @@ function HowTo() {
             className="mx-auto mb-4"
             icon={faRedo}
             size="7x"
-            color="#4fc3f7"
+            color="#ed64a6"
           />
           <p>
             Una vez que pagues una cierta cantidad, podrás volver a solicitar

@@ -68,15 +68,15 @@ class SimulatorData extends React.Component {
                 clientes reciben esta oferta)
               </p>
             </div>
-            <FormButton to="/register" text="Solicitalo Ahora!!!" />
+            <FormButton to="/register" text="¡Solicitalo Ahora!" />
           </div>
         </div>
         <div className="text-center m-8">
           <p>
             El simulador de credito y todos nuestros servicios financieros son
             100% en linea para que no pierdas tiempo en procesos complicados.
-            Analizamos la informacion de tu empresa para ofrecerte tasas y
-            montos de acuerdo a la facturacion e historial de credito
+            Analizamos la informacion de tu empresa y personal para ofrecerte
+            tasas y montos de acuerdo a varios factores.
           </p>
         </div>
       </div>

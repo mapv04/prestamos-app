@@ -37,7 +37,7 @@ class SignupAboutCompany extends React.Component {
             />
 
             <label htmlFor="como" className="block font-bold mb-2 text-sm">
-              Como usaras tu crédito?
+              ¿Como usaras tu crédito?
             </label>
             <textarea id="como" rows="5" className="auth-input" />
 
