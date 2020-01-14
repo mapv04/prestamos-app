@@ -1,5 +1,5 @@
 const AA = [0.19, 0.21, 0.23, 0.25];
-const BB = [0.27, 0.3, 0.33, 0.36];
+const BB = [0.35, 0.35, 0.35, 0.35];
 const CC = [0.36, 0.39, 0.42, 0.45];
 
 export function calculateTasa(months) {

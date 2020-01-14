@@ -60,12 +60,14 @@ class SimulatorData extends React.Component {
             </div>
             <div className="text-center w-full text-pink-500">
               <p>
-                Tasa de interes anual fija (aproximada):{' '}
+                Tasa de interés anual fija (aproximada):{' '}
                 {this.props.simulator.tasaAnual} {'%'}
               </p>
               <p>
-                Tasa de interes: <strong>33.4% CAT</strong> (7 de cada 10
-                clientes reciben esta oferta)
+                Tasa de interés: <strong>X.Xx% CAT</strong> (7 de cada 10
+                clientes reciben esta oferta). Nuestros préstamos promedio tiene
+                esta tasa. Recuerda que dependiendo de nuestro análisis el tasa
+                puede bajar.
               </p>
             </div>
             <FormButton to="/register" text="¡Solicitalo Ahora!" />

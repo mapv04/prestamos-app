@@ -52,7 +52,7 @@ class Simulator extends React.Component {
           <label className="block">¿Cuánto necesitas?</label>
           <NumberFormat
             name="quantity"
-            placeholder="100,000"
+            placeholder="Desde $50,000 a $300,000"
             className="shadow rounded border border-pink-500  py-2 px-3 text-gray-700 leading-tight"
             onChange={this.props.onChange}
             required

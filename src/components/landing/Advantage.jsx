@@ -7,7 +7,7 @@ function Advantage(props) {
   return (
     <div className="flex items-center m-4 text-xl text-white">
       <FontAwesomeIcon
-        className="m-3"
+        className="m-2"
         size="2x"
         icon={faCheckCircle}
         color="#4fc3f7"

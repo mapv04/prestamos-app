@@ -94,8 +94,7 @@ class SimulatorPage extends React.Component {
               Simulador
             </h1>
             <p className="text-center">
-              Simula tu crédito en 3 pasos y calcula el monto, plazo y pagos de
-              tu crédito
+              Calcula el monto de tus pagos y a que tasa.
             </p>
             <div className="flex justify-center">{this.whichComponent()}</div>
           </div>
