@@ -12,9 +12,7 @@ function HowTo() {
     <div className="pt-24 container mx-auto">
       <div className="text-left px-1">
         <h1 className="text-4xl md:text-6xl">
-          <strong>
-          ¿Cómo es nuestro proceso solicitar un crédito?
-          </strong>
+          <strong>¿Cómo es nuestro proceso para solicitar un crédito?</strong>
         </h1>
       </div>
 
@@ -27,7 +25,10 @@ function HowTo() {
             color="#ed64a6"
           />
           <p>
-          Recibe una respuesta en menos de 48 horas, sin la necesidad de viajar, hacer filas, papeleo excesivo y sin compromiso. Todos nuestros créditos son transparentes sin letras pequeñas ni comisiones escondidas.
+            Recibe una respuesta en menos de 48 horas, sin la necesidad de
+            viajar, hacer filas, papeleo excesivo y sin compromiso. Todos
+            nuestros créditos son transparentes sin letras pequeñas ni
+            comisiones escondidas.
           </p>
         </div>
         <div className="md:w-1/3 p-5">
@@ -38,7 +39,9 @@ function HowTo() {
             color="#ed64a6"
           />
           <p>
-          Recibe tu crédito directamente en tu cuenta bancaria. Sólo paga la cantidad recibida. Una vez autorizado el crédito podras recibir los fondos ese mismo día.
+            Recibe tu crédito directamente en tu cuenta bancaria. Sólo paga la
+            cantidad recibida. Una vez autorizado el crédito podras recibir los
+            fondos ese mismo día.
           </p>
         </div>
         <div className="md:w-1/3 p-5">

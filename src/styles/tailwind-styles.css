@@ -11491,12 +11491,56 @@ footer {
   background-color: #fff;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.modal_container {
+  position: relative;
+  width: 80%;
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  top: 10rem;
+}
+
+.modal_close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #ed64a6;
+  color: #fff;
+  font-weight: 700;
+  border: 0;
+}
+
 @media (min-width: 1024px) {
   .nav-navbar {
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .modal_container {
+    width: 33.333333%;
   }
 }
 

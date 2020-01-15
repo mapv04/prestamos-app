@@ -3,8 +3,13 @@ import React from 'react';
 import SignupContainer from './SignupContainer';
 import FormInput from '../FormInput';
 import FormButton from '../FormButton';
+import PhoneCodeModal from './PhoneCodeModal';
 
 class SignupAboutCompany extends React.Component {
+  state = {
+    modalIsOpen: false
+  };
+
   componentDidMount() {
     this.navElementActive();
   }
@@ -14,6 +19,15 @@ class SignupAboutCompany extends React.Component {
     navElement.textContent = 'Registro';
     navElement.classList.add('border-pink-400');
   }
+
+  handleOpenModal = e => {
+    e.preventDefault();
+    this.setState({ modalIsOpen: true });
+  };
+
+  handleCloseModal = e => {
+    this.setState({ modalIsOpen: false });
+  };
 
   render() {
     return (
@@ -41,7 +55,20 @@ class SignupAboutCompany extends React.Component {
             </label>
             <textarea id="como" rows="5" className="auth-input" />
 
-            <FormButton to="/" text="Consultar" />
+            <div className="flex flex-wrap items-center justify-between">
+              <button
+                className="w-full w-full bg-pink-500 hover:bg-pink-700 text-white text-center font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                onClick={this.handleOpenModal}
+              >
+                Continuar
+              </button>
+            </div>
+
+            <PhoneCodeModal
+              to="/"
+              isOpen={this.state.modalIsOpen}
+              onCloseModal={this.handleCloseModal}
+            />
           </div>
         }
       />

@@ -64,7 +64,7 @@ class Signup extends React.Component {
               class="auth-input"
             />
 
-            <FormButton to="/register/rfc" text="Registrar" />
+            <FormButton to="/register/rfc" text="Continuar" />
           </div>
         }
       />
