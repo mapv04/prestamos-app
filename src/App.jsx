@@ -8,12 +8,12 @@ import './styles/tailwind-styles.css';
 import Landing from './pages/Landing';
 
 //Auth
-import Auth from './pages/auth/Auth';
-import AuthSignup from './pages/auth/AuthSignup';
-import AuthSignupRFC from './pages/auth/AuthSignupRFC';
-import AuthSignupLocation from './pages/auth/AuthSignupLocation';
-import AuthSignupExperience from './pages/auth/AuthSignupExperience';
-import AuthSignupAboutCompany from './pages/auth/AuthSignupAboutCompany';
+import Login from './pages/auth/Login';
+import Signup from './pages/auth/Signup';
+import SignupRFC from './pages/auth/SignupRFC';
+import SignupLocation from './pages/auth/SignupLocation';
+import SignupExperience from './pages/auth/SignupExperience';
+import SignupAboutCompany from './pages/auth/SignupAboutCompany';
 
 //simulator
 import SimulatorPage from './pages/SimulatorPage';
@@ -29,20 +29,12 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route exact path="/login" component={Auth} />
-        <Route exact path="/register" component={AuthSignup} />
-        <Route exact path="/register/rfc" component={AuthSignupRFC} />
-        <Route exact path="/register/location" component={AuthSignupLocation} />
-        <Route
-          exact
-          path="/register/experience"
-          component={AuthSignupExperience}
-        />
-        <Route
-          exact
-          path="/register/company"
-          component={AuthSignupAboutCompany}
-        />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Signup} />
+        <Route exact path="/register/rfc" component={SignupRFC} />
+        <Route exact path="/register/location" component={SignupLocation} />
+        <Route exact path="/register/experience" component={SignupExperience} />
+        <Route exact path="/register/company" component={SignupAboutCompany} />
         <Route exact path="/simulator" component={SimulatorPage} />
         <Route exact path="/help" component={Help} />
         <Route exact path="/about" component={About} />
