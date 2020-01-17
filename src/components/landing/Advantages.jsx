@@ -24,7 +24,7 @@ function Advantages() {
           <Advantage text="Recibe respuesta de manera inmediata" />
           <Advantage text="Te depositamos en tu cuenta bancaria" />
           <Advantage text="Decide la fecha de pago" />
-          <Advantage text="Si deseas adelantar pagos a capital, lo puedes hacer sin alguna penalización o cobro extra" />
+          <Advantage text="Adelanta pagos a capital sin cobro extra" />
           <Advantage text="Mejoramos tu tasa para el segundo crédito" />
 
           <div />

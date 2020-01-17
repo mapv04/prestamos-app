@@ -96,7 +96,9 @@ class SimulatorPage extends React.Component {
             <p className="text-center">
               Calcula el monto de tus pagos y a que tasa.
             </p>
-            <div className="flex justify-center">{this.whichComponent()}</div>
+            <div className="flex justify-center p-4">
+              {this.whichComponent()}
+            </div>
           </div>
         </div>
       </div>
